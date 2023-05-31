@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="702.0" prefWidth="800.0" style="-fx-background-color: #006db2;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test_cases.Signup_Controller">
+   <children>
+      <Button fx:id="transferButton" layoutX="316.0" layoutY="451.0" mnemonicParsing="false" onAction="#PushTansfer" prefHeight="35.0" prefWidth="138.0" style="-fx-background-color: #acd;" text="Transfer" />
+      <Label layoutX="185.0" layoutY="48.0" text="Transfer Money to another account" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="BackTransferButton" mnemonicParsing="false" onAction="#PushBackTransfer" prefHeight="31.0" prefWidth="101.0" style="-fx-background-color: darkred;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="185.0" layoutY="114.0" prefHeight="44.0" prefWidth="399.0" text="enter the security number of your account:" textFill="#fafafa">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ownTranferSecurity" layoutX="310.0" layoutY="169.0" promptText="Account security number" />
+      <Label alignment="CENTER" layoutX="68.0" layoutY="219.0" prefHeight="35.0" prefWidth="634.0" text="enter the security number of the account: you want to transfer money to:" textFill="#fafafa">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="transferSecurityNumber" layoutX="310.0" layoutY="266.0" promptText="Account security number" />
+      <Label alignment="CENTER" layoutX="82.0" layoutY="315.0" prefHeight="35.0" prefWidth="634.0" text="enter the amount of money $" textFill="#fafafa">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="transferAmount" layoutX="310.0" layoutY="358.0" promptText="money" />
+   </children>
+</AnchorPane>

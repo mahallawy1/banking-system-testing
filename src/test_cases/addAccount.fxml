@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="702.0" prefWidth="800.0" style="-fx-background-color: #006db2;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test_cases.Signup_Controller">
+   <children>
+      <Button fx:id="addAccountButton" layoutX="315.0" layoutY="537.0" mnemonicParsing="false" onAction="#PushAddAccount" prefHeight="35.0" prefWidth="138.0" style="-fx-background-color: #acd;" text="Add Account" />
+      <Label layoutX="311.0" layoutY="48.0" text="Add Account" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="BackAddAccount" mnemonicParsing="false" onAction="#PushBackAddAccount" prefHeight="31.0" prefWidth="101.0" style="-fx-background-color: darkred;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="82.0" layoutY="164.0" prefHeight="35.0" prefWidth="197.0" text="Name:" textFill="#fafafa">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="AddNameField" layoutX="310.0" layoutY="169.0" promptText="Name" />
+      <Label alignment="CENTER" layoutX="85.0" layoutY="261.0" prefHeight="35.0" prefWidth="190.0" text="Security Number:" textFill="#fafafa">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="AddSecurityNumber" layoutX="310.0" layoutY="266.0" promptText="Security Number" />
+      <Label alignment="CENTER" layoutX="111.0" layoutY="353.0" prefHeight="35.0" prefWidth="138.0" text="Balance" textFill="#fafafa">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="AddBalance" layoutX="310.0" layoutY="358.0" promptText="Balance" />
+      <Label alignment="CENTER" layoutX="111.0" layoutY="451.0" prefHeight="35.0" prefWidth="138.0" text="Account Type:" textFill="#fafafa">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="CheckingToggle" layoutX="295.0" layoutY="460.0" mnemonicParsing="false" text="Checking" textFill="WHITE" />
+      <RadioButton fx:id="SavingToggle" layoutX="417.0" layoutY="460.0" mnemonicParsing="false" text="Saving" textFill="WHITE" />
+   </children>
+</AnchorPane>

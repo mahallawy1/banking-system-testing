@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="702.0" prefWidth="800.0" style="-fx-background-color: #006db2;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test_cases.Signup_Controller">
+   <children>
+      <Label layoutX="321.0" layoutY="48.0" text="Statements" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="BackStatements" mnemonicParsing="false" onAction="#PushBackStatements" prefHeight="31.0" prefWidth="101.0" style="-fx-background-color: darkred;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="228.0" layoutY="115.0" prefHeight="35.0" prefWidth="314.0" text="enter account security number" textFill="#fafafa">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="securityNumberField" layoutX="310.0" layoutY="169.0" promptText="Name" />
+      <Label fx:id="BalanceLabel" layoutX="14.0" layoutY="228.0" prefHeight="27.0" prefWidth="113.0" style="visibility: false;" text="Balance:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="balanceStatemant" layoutX="284.0" layoutY="228.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ListView fx:id="boughtItemsList" layoutX="168.0" layoutY="302.0" prefHeight="334.0" prefWidth="462.0" style="visibility: false;" />
+      <Label fx:id="BoughtItemsLabel" layoutX="11.0" layoutY="440.0" prefHeight="57.0" prefWidth="158.0" style="visibility: false;" text="All Bought items: " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="610.0" layoutY="132.0" mnemonicParsing="false" onAction="#checkAccount" prefHeight="35.0" prefWidth="97.0" style="-fx-background-color: #acd;" text="Check Account" />
+   </children>
+</AnchorPane>

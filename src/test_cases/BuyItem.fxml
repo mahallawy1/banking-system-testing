@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test_cases.Signup_Controller">
+   <bottom>
+      <AnchorPane prefHeight="702.0" prefWidth="800.0" style="-fx-background-color: #006db2;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="buyPayBills" layoutX="332.0" layoutY="508.0" mnemonicParsing="false" onAction="#pushPayBills" prefHeight="59.0" prefWidth="106.0" text="Pay bill" />
+            <Label layoutX="329.0" layoutY="48.0" text="Buy Items" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="BackBuyItem" mnemonicParsing="false" onAction="#pushBackBuyItem" prefHeight="31.0" prefWidth="101.0" style="-fx-background-color: darkred;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font></Button>
+            <Label layoutX="16.0" layoutY="107.0" prefHeight="44.0" prefWidth="399.0" text="enter the security number of your account:" textFill="#fafafa">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="buySecurityNumber" layoutX="395.0" layoutY="116.0" promptText="Account security number" />
+            <ImageView fx:id="laptopImage" fitHeight="120.0" fitWidth="150.0" layoutX="36.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/laptop.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="cameraImage" fitHeight="113.0" fitWidth="146.0" layoutX="220.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/camera.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="TVImage" fitHeight="111.0" fitWidth="157.0" layoutX="405.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+               <image>
+                  <Image url="@../Images/TV.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="headphonesImage" fitHeight="120.0" fitWidth="129.0" layoutX="605.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/headphones.png" />
+               </image>
+            </ImageView>
+            <RadioButton fx:id="laptopToggle" layoutX="68.0" layoutY="342.0" mnemonicParsing="false" text="Laptop 1200$" textFill="WHITE" />
+            <RadioButton fx:id="cameraToggle" layoutX="245.0" layoutY="342.0" mnemonicParsing="false" text="Camera 700$" textFill="WHITE" />
+            <RadioButton fx:id="TVToggle" layoutX="435.0" layoutY="341.0" mnemonicParsing="false" text="TV 1500$" textFill="WHITE" />
+            <RadioButton fx:id="headphonesToggle" layoutX="622.0" layoutY="342.0" mnemonicParsing="false" text="Headphones 200$" textFill="WHITE" />
+            <Label layoutX="244.0" layoutY="166.0" text="choose one or more item" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="buySingleItem" layoutX="332.0" layoutY="430.0" mnemonicParsing="false" onAction="#pushBuySingleItem" prefHeight="59.0" prefWidth="106.0" text="buy one item" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
